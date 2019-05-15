@@ -1,0 +1,89 @@
+[1mdiff --git a/node_modules/express/package.json b/node_modules/express/package.json[m
+[1mindex 4c88ff3..1f203bb 100644[m
+[1m--- a/node_modules/express/package.json[m
+[1m+++ b/node_modules/express/package.json[m
+[36m@@ -1,19 +1,19 @@[m
+ {[m
+[31m-  "_from": "express",[m
+[32m+[m[32m  "_from": "express@^4.16.4",[m
+   "_id": "express@4.16.4",[m
+   "_inBundle": false,[m
+   "_integrity": "sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==",[m
+   "_location": "/express",[m
+   "_phantomChildren": {},[m
+   "_requested": {[m
+[31m-    "type": "tag",[m
+[32m+[m[32m    "type": "range",[m
+     "registry": true,[m
+[31m-    "raw": "express",[m
+[32m+[m[32m    "raw": "express@^4.16.4",[m
+     "name": "express",[m
+     "escapedName": "express",[m
+[31m-    "rawSpec": "",[m
+[32m+[m[32m    "rawSpec": "^4.16.4",[m
+     "saveSpec": null,[m
+[31m-    "fetchSpec": "latest"[m
+[32m+[m[32m    "fetchSpec": "^4.16.4"[m
+   },[m
+   "_requiredBy": [[m
+     "#USER",[m
+[36m@@ -21,8 +21,8 @@[m
+   ],[m
+   "_resolved": "https://registry.npmjs.org/express/-/express-4.16.4.tgz",[m
+   "_shasum": "fddef61926109e24c515ea97fd2f1bdbf62df12e",[m
+[31m-  "_spec": "express",[m
+[31m-  "_where": "C:\\users\\nezzen\\demo",[m
+[32m+[m[32m  "_spec": "express@^4.16.4",[m
+[32m+[m[32m  "_where": "C:\\Users\\Nezzen\\Demo",[m
+   "author": {[m
+     "name": "TJ Holowaychuk",[m
+     "email": "tj@vision-media.ca"[m
+[1mdiff --git a/package-lock.json b/package-lock.json[m
+[1mindex 1f6edf4..eccdc19 100644[m
+[1m--- a/package-lock.json[m
+[1m+++ b/package-lock.json[m
+[36m@@ -18,6 +18,14 @@[m
+       "resolved": "https://registry.npmjs.org/array-flatten/-/array-flatten-1.1.1.tgz",[m
+       "integrity": "sha1-ml9pkFGx5wczKPKgCJaLZOopVdI="[m
+     },[m
+[32m+[m[32m    "async": {[m
+[32m+[m[32m      "version": "2.6.2",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/async/-/async-2.6.2.tgz",[m
+[32m+[m[32m      "integrity": "sha512-H1qVYh1MYhEEFLsP97cVKqCGo7KfCyTt6uEWqsTBr9SO84oK9Uwbyd/yCW+6rKJLHksBNUVWZDAjfS+Ccx0Bbg==",[m
+[32m+[m[32m      "requires": {[m
+[32m+[m[32m        "lodash": "^4.17.11"[m
+[32m+[m[32m      }[m
+[32m+[m[32m    },[m
+     "body-parser": {[m
+       "version": "1.18.3",[m
+       "resolved": "https://registry.npmjs.org/body-parser/-/body-parser-1.18.3.tgz",[m
+[36m@@ -188,6 +196,11 @@[m
+       "resolved": "https://registry.npmjs.org/ipaddr.js/-/ipaddr.js-1.9.0.tgz",[m
+       "integrity": "sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA=="[m
+     },[m
+[32m+[m[32m    "lodash": {[m
+[32m+[m[32m      "version": "4.17.11",[m
+[32m+[m[32m      "resolved": "https://registry.npmjs.org/lodash/-/lodash-4.17.11.tgz",[m
+[32m+[m[32m      "integrity": "sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg=="[m
+[32m+[m[32m    },[m
+     "media-typer": {[m
+       "version": "0.3.0",[m
+       "resolved": "https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz",[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 2e28507..0f0b435 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -12,6 +12,7 @@[m
+   "author": "Ross Hopkins",[m
+   "license": "ISC",[m
+   "dependencies": {[m
+[32m+[m[32m    "async": "^2.6.2",[m
+     "express": "^4.16.4"[m
+   }[m
+ }[m
+warning: LF will be replaced by CRLF in node_modules/express/package.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in package-lock.json.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory.

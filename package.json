@@ -1,0 +1,18 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Demo for node.js setup.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo"
+  ],
+  "author": "Ross Hopkins",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "express": "^4.16.4"
+  }
+}
