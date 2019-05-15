@@ -1,0 +1,19 @@
+const http = require('http');
+const port = 3000;
+
+// http requests
+const requestHandler = (request, response) => {
+  response.end ('Handling a request on port ${port}')
+};
+
+// create server pass requestHandler
+const server = http.createServer(requestHandler);
+
+// start server listen port 3000
+
+server.listen(port, (err) => {
+if(err) {
+ return console.log('You have an error: ${err}');
+}
+  console.log('server is listening on ${port}');
+});
